@@ -1,6 +1,7 @@
 package org.example.model;
 
 import org.example.model.entities.ConsoleCleaner;
+import org.example.model.entities.functions.ChangeStatus;
 import org.example.model.entities.functions.CreateATask;
 import org.example.model.entities.functions.ListTasks;
 
@@ -34,12 +35,13 @@ public class Menu {
         }
         if (function == 'B' || function == 'b') {
             b.cCleaner();
-            System.out.println("=================================");
             ListTasks.listarItensPasta();
 
         }
         if (function == 'C' || function == 'c') {
             b.cCleaner();
+            ChangeStatus.statusState();
+            //ChangeStatus.
             //flagTaskMenu();
         }
         if (function == 'D' || function == 'd') {
