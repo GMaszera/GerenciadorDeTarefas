@@ -26,7 +26,6 @@ public class ListTasks {
             // Criar um objeto Path representando a pasta
             Path pasta = Paths.get(diretorio);
 
-
             // Itera sobre os arquivos na pasta e adiciona os nomes à lista
             try {
                 ArrayList<String> nomesArquivos = new ArrayList<>();
@@ -36,7 +35,6 @@ public class ListTasks {
 
                 for (int i = 0; nomesArquivos.size() > i; i++) {
                     System.out.println(nomesArquivos.get(i));
-                    ChangeStatus aa = new ChangeStatus("aaaa" + i);
                 }
 
 

@@ -3,9 +3,7 @@ package org.example;
 
 import org.example.model.Menu;
 import org.example.model.entities.AccountData;
-import org.example.model.entities.functions.ListTasks;
 
-import java.awt.*;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -15,13 +13,14 @@ public class Main {
         Locale.setDefault(locale);
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite seu nome: ");
-        String user = sc.next();
-
-       ///INSTANCES
+        //System.out.print("Digite seu nome: ");
+        //String user = sc.next();
+        String user = "Gabriel Massera Nascimento";
+        System.out.println("==  Bem Vindo as suas Tarefas  == \n" + "==  "+user.toUpperCase()+"  ==\n");
+        System.out.println("_____________________________________");
+        ///INSTANCES
         AccountData a = new AccountData(user);
         Menu menu = new Menu();
-
 
 
         Menu.mainMenu();
