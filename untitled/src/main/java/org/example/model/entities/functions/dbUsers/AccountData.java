@@ -1,4 +1,4 @@
-package org.example.model.entities;
+package org.example.model.entities.functions.dbUsers;
 
 import java.util.UUID;
 

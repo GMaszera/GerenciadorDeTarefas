@@ -1,6 +1,6 @@
-package org.example.model.entities.functions;
+package org.example.model.entities.functions.listEdit;
 
-import org.example.model.Menu;
+import org.example.model.entities.functions.Menu;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,7 +17,6 @@ public class ListTasks {
 
     // Classe interna para listar os itens da pasta
     private static class List {
-        Scanner sc = new Scanner(System.in);
 
         public static void main(String[] args) {
             // Caminho da pasta a ser listada
@@ -37,9 +36,17 @@ public class ListTasks {
                     System.out.println(nomesArquivos.get(i));
                 }
 
-
                 System.out.println("=====================================");
-                System.out.println("");
+                System.out.println("Do you wanna change some task? y/n");
+                /*TIP Scanner sc = new Scanner(System.in);
+                char yesOrNo = sc.next().charAt(0);
+                 switch (yesOrNo) {
+                    case 'y':
+                        EditTasks newEdit = new EditTasks();
+                        EditTasks.
+                    case 'n':
+                        Menu.mainMenu();
+                }*/
                 Menu.mainMenu();
 
             } catch (IOException e) {

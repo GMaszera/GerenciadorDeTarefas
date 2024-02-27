@@ -1,6 +1,6 @@
-package org.example.model.entities.functions;
+package org.example.model.entities.functions.newTask;
 
-import org.example.model.Menu;
+import org.example.model.entities.functions.Menu;
 import org.example.model.entities.ConsoleCleaner;
 
 import java.io.File;
